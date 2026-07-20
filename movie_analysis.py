@@ -1,6 +1,5 @@
-#Talking Data Starter Code
 
-#Part 2 Setting up the program
+#Part 1 Setting up the program
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -12,12 +11,12 @@ favMovie = "Enchanted"
 print("My favorite movie is " + favMovie)
 
 
-#Part 3 Investigate the data
+#Part 2 Investigate the data
 #print(movieData.head())
 #print(movieData["movie_title"])
 
 
-#Part 4 Filter data
+#Part 3 Filter data
 print("\nThe data for my favorite movie is:\n")
 #Create a new variable to store your favorite movie information
 
@@ -42,7 +41,7 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 input("Press enter to see more information about how " + favMovie +
       " compares to other movies in this genre.\n")
 
-#Part 5 Describe data
+#Part 4 Describe data
 #min
 min = comedyMovieData["audience_rating"].min()
 print("The min audience rating of the data set is: " + str(min))
@@ -68,7 +67,7 @@ print(favMovie + " [is higher than] the median movie rating.")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 input("Press enter to see data visualizations.\n")
 
-#Part 6 Create graphs
+#Part 5 Create graphs
 #Create histogram
 plt.hist(comedyMovieData["audience_rating"],range=(0,100), bins=20)
 
